@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <table class="table table-bordered" id="myTable">
+        <caption>第二学期春季</caption>
+        <thead>
+        <tr class="text-center">
+          <th>月份</th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th class="weekend">六</th>
+          <th class="weekend">日</th>
+          <th>周次</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let weeks of timeDataSum">
+          <td>
+              {{weeks[0]}}
+          </td>
+          <td>
+              {{weeks[1]}}
+          </td>
+          <td>
+              {{weeks[2]}}
+          </td>
+          <td>
+              {{weeks[3]}}
+          </td>
+          <td>
+              {{weeks[4]}}
+          </td>
+          <td>
+              {{weeks[5]}}
+          </td>
+          <td class="weekend">
+              {{weeks[6]}}
+          </td>
+          <td class="weekend">
+              {{weeks[7]}}
+          </td>
+          <td>
+              {{weeks[8]}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
